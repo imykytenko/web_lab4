@@ -37,8 +37,8 @@ header .navbar-nav .nav-item .current {
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
+    max-width:100%;
+    margin: 10px;
 }
 
 .faq-container {
@@ -46,7 +46,6 @@ header .navbar-nav .nav-item .current {
     margin: 10px;
     border: 1px solid #ccc;
     padding: 10px;
-    box-sizing: border-box;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 

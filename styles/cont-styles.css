@@ -22,8 +22,7 @@ header .navbar-brand:hover {
 }
 
 .contacts {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
 
 .contacts-map {
@@ -53,7 +52,6 @@ header .navbar-brand:hover {
     border: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .contacts-item:hover {
