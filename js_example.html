@@ -37,9 +37,13 @@
         <div id="modal-content">
             <div id="close-btn" onclick="closeModal()">✖</div>
             <div id="chat"></div>
-            <label for="message">Введіть повідомлення:</label>
-            <input type="text" id="message">
-            <button onclick="sendMessage()">Відправити</button>
+            <label for="user1Message">Користувач 1 введіть повідомлення:</label>
+            <input type="text" id="user1Message">
+            <button onclick="sendMessage('user1')">Відправити</button>
+
+            <label for="user2Message">Користувач 2 введіть повідомлення:</label>
+            <input type="text" id="user2Message">
+            <button onclick="sendMessage('user2')">Відправити</button>
         </div>
     </div>
 

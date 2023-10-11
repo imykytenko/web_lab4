@@ -6,8 +6,8 @@ function closeModal() {
     document.getElementById('modal').style.display = 'none';
 }
 
-function sendMessage() {
-    const messageInput = document.getElementById('message');
+function sendMessage(user) {
+    const messageInput = document.getElementById(user === 'user1' ? 'user1Message' : 'user2Message');
     const message = messageInput.value;
 
     if (message.trim() === '') {
@@ -21,7 +21,7 @@ function sendMessage() {
     const messageContainer = document.createElement('div');
     messageContainer.classList.add('message-container');
 
-    if (document.querySelectorAll('.message-container').length % 2 === 0) {
+    if (user === 'user1') {
         messageContainer.classList.add('user1');
     } else {
         messageContainer.classList.add('user2');
